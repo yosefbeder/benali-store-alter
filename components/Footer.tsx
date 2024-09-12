@@ -16,12 +16,28 @@ export default function Footer() {
         <ContactDetails />
         <p className="text-sm text-center">
           جميع الحقوق محفوظة · تم التطوير بواسطة{" "}
-          <a href="https://www.facebook.com/asaber.25" className="normal">
+          <a
+            href="https://www.facebook.com/asaber.25"
+            className="normal"
+            target="_blank"
+          >
             عبد الرحمن صابر
           </a>{" "}
           والتصميم بواسطة{" "}
-          <a href="https://yosefbeder.vercel.app/" className="normal">
+          <a
+            href="https://yosefbeder.vercel.app/"
+            className="normal"
+            target="_blank"
+          >
             يوسف بدير
+          </a>
+          ·{" "}
+          <a
+            href="https://www.facebook.com/people/DocReader-Guide/61564416632497/?mibextid=ZbWKwL"
+            className="normal"
+            target="_blank"
+          >
+            تيم المأكولات البرمجية
           </a>
         </p>
       </div>
