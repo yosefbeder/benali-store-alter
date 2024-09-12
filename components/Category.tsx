@@ -1,6 +1,10 @@
-import { Category as CategoryType } from "@/types";
+import { Category as CategoryType, Product } from "@prisma/client";
 
-export default function Category({ header, slug, products }: CategoryType) {
+export default function Category({
+  header,
+  slug,
+  products,
+}: CategoryType & { products: Product[] }) {
   return (
     <div className="border-b-2 border-slate-400 dark:border-slate-300 last:border-0">
       <section className="section py-8">
@@ -24,11 +28,7 @@ export default function Category({ header, slug, products }: CategoryType) {
                   {required && (
                     <>
                       <h4>✍️ المطلوب</h4>
-                      <ol className="list-decimal pr-4">
-                        {required.map((criteria, index) => (
-                          <li key={index}>{criteria}</li>
-                        ))}
-                      </ol>
+                      <p className="whitespace-pre-line">{required}</p>
                     </>
                   )}
 
