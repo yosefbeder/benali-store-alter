@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Category } from "@/types";
+import { Category } from "@prisma/client";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Nav({ categories }: { categories: Category[] }) {
